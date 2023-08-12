@@ -133,7 +133,7 @@ const CartCardProduct = ({ data }) => {
                 <motion.button
                   className='text-4xl text-textColor'
                   whileTap={{ scale: 0.8 }}
-                  onClick={() => updateCartItemQuantity(cart.id, cart.productQty--)}
+                  onClick={() => updateCartItemQuantity(cart.id, cart.productQty-1)}
                 >
                   <AiOutlineMinus />
                 </motion.button>
