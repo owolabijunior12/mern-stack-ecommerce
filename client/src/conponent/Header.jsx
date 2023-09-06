@@ -45,7 +45,7 @@ const Header = () => {
     <div className="flex  justify-between  w-full">  
    
         <Link to={'/'}>
-              <h1 className='  text-2xl px-7 text-textColor'>IBOYTECH STORE</h1>
+              <h1 className='   text-xl px-7 text-textColor'>IBOYTECH STORE</h1>
                       
         </Link>
              
@@ -62,33 +62,33 @@ const Header = () => {
                 isMenu&&(
                   <div className='absolute z-10 p-4  top-20 right-5 gap-4 w-275 bg-[] shadow-lg rounded-lg backdrop-blur-sm flex-col'>
                     <Link to={"/user-profile"}>
-                            <span className='text-base flex m-4   textColor hover:font-extrabold hover:text-2xl duration-150 transition-all ease-in-out'>
+                            <span className='text-base flex m-4   textColor hover:font-extrabold hover: text-xl duration-150 transition-all ease-in-out'>
                                   {/* <AiOutlineProfile className='mr-1'/> */}
                                    Profile
                               </span>
                     </Link>
                     <Link to={"/"}>
-                            <span  className='text-baseflex m-4 justify-between textColor hover:font-extrabold hover:text-2xl  duration-150 transition-all ease-in-out'>
+                            <span  className='text-baseflex m-4 justify-between textColor hover:font-extrabold hover: text-xl  duration-150 transition-all ease-in-out'>
                                   Track order
                               </span>
                     </Link>
                     <Link to={"/"}>
-                            <span className='text-base flex m-4 justify-between  textColor hover:font-extrabold hover:text-2xl  duration-150 transition-all ease-in-out'>
+                            <span className='text-base flex m-4 justify-between  textColor hover:font-extrabold hover: text-xl  duration-150 transition-all ease-in-out'>
                                   Transactions 
                               </span>
                     </Link>
                     <Link to={"/admin-page"}>
-                            <p className='text-baseflex m-4 justify-between  textColor hover:font-extrabold hover:text-2xl  duration-150 transition-all ease-in-out'>
+                            <p className='text-baseflex m-4 justify-between  textColor hover:font-extrabold hover: text-xl  duration-150 transition-all ease-in-out'>
                                   Admin Page
                               </p>
                     </Link>
                     <Link to={"/"}>
-                            <p className='text-base flex m-4 justify-between  textColor hover:font-extrabold hover:text-2xl  duration-150 transition-all ease-in-out'>
+                            <p className='text-base flex m-4 justify-between  textColor hover:font-extrabold hover: text-xl  duration-150 transition-all ease-in-out'>
                                   Help Center
                               </p>
                     </Link>
                       
-                    <Link to={`/login?redirect=${redirect}`} className='hover:font-extrabold hover:text-2xl '>
+                    <Link to={`/login?redirect=${redirect}`} className='hover:font-extrabold hover: text-xl '>
                       <p  className='flex m-4 justify-between  hover:font-bold duration-150 transition-all ease-in-out'>
                         LogOut<FiLogOut values="LogOut" />
                       </p>                      
@@ -113,16 +113,16 @@ const Header = () => {
           
           <div className="flex bg-black justify-between px-4 py-4">            
           <Link to={'/'}>
-              <h1 className='py-3 px-2 text-2xl text-textColor'>IBOYTECH STORE</h1>              
+              <h1 className='py-3 px-2  text-xl text-textColor'>IBOYTECH STORE</h1>              
         </Link>
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <AiFillCloseCircle className='text-2xl text-red-500'/>
+              <AiFillCloseCircle className=' text-xl text-red-500'/>
             </button>
           </div>
           <hr />
 
          
-          <div className="flex flex-col gap-10 m-2 pl-6 text-2xl scroll-m-1 overflow-scroll overflow-y-scroll bg-scroll text-textColor">
+          <div className="flex flex-col gap-10 m-2 pl-6  text-xl scroll-m-1 overflow-scroll overflow-y-scroll bg-scroll text-textColor">
             {/* <div className='flex justify-between'>                   
                   <p  className='mx-5 my-2 text-textColor text-4xl'><small><Link to={`/login?redirect=${redirect}`}><FiLogOut values="LogOut" /></Link></small>  </p>
             </div> */}
@@ -130,7 +130,7 @@ const Header = () => {
                         <Link to={"/user-profile"}>
                         <  div className=' flex gap-1' >
                                 <img src={profile}  className=' w-16 h-16 min-w[44px] object-cover rounded-full shadow-lg' alt="user-pic" />        
-                                <p className='text-4xl font-bold capitalize'> {user?.name}<div className='text-lg'>Admin</div></p>
+                                <p className='text-xl font-bold capitalize'> {user?.name}<div className='text-lg'>Admin</div></p>
                               </div>
                         </Link>         
                           
@@ -138,22 +138,22 @@ const Header = () => {
                  </div>
               
                     <Link to={"/"}>
-                            <p  className='text-base flex  justify-between textColor hover:font-extrabold hover:text-2xl  duration-150 transition-all ease-in-out'>
+                            <p  className='text-base flex  justify-between textColor hover:font-extrabold hover: text-xl  duration-150 transition-all ease-in-out'>
                                   Track order
                               </p>
                     </Link>
                     <Link to={"/"}>
-                            <p className='text-base flex justify-between  textColor hover:font-extrabold hover:text-2xl  duration-150 transition-all ease-in-out'>
+                            <p className='text-base flex justify-between  textColor hover:font-extrabold hover: text-xl  duration-150 transition-all ease-in-out'>
                                   Transactions 
                               </p>
                     </Link>
                     <Link to={"/admin-page"}>
-                            <p className='text-base flex  justify-between  textColor hover:font-extrabold hover:text-2xl  duration-150 transition-all ease-in-out'>
+                            <p className='text-base flex  justify-between  textColor hover:font-extrabold hover: text-xl  duration-150 transition-all ease-in-out'>
                                   Admin Page
                               </p>
                     </Link>
                     <Link to={"/"}>
-                            <p className='text-base flex  justify-between  textColor hover:font-extrabold hover:text-2xl  duration-150 transition-all ease-in-out'>
+                            <p className='text-base flex  justify-between  textColor hover:font-extrabold hover: text-xl  duration-150 transition-all ease-in-out'>
                                   Help Center
                               </p>
                     </Link>

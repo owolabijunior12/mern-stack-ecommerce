@@ -35,7 +35,7 @@ const cartProducts =   JSON.parse(localStorage.getItem("cart"));
                <AiOutlineShopping className='text-8xl border rounded-full p-4 bg-white text-textColor' />
                 <p className='font-bold text-4xl text-textColor py-2'>Your cart is empty</p>
                 <h1 className='text-textColor font-semibold py-2'>Browse our categories and discover our best deals!</h1>
-                <button type='button' className='bg-primary px-12 rounded-xl  my-10 py-2 text-2xl text-textColor' onClick={GoShopping}>Start Shopping</button>
+                <button type='button' className='bg-primary px-12 rounded-xl  my-10 py-2  text-xl text-textColor' onClick={GoShopping}>Start Shopping</button>
             </div>
           ) : (
              <CartCardProduct key={carts} data={carts} />
@@ -125,15 +125,15 @@ const CartCardProduct = ({ data }) => {
               <div className='flex gap-3' onClick={() => navigate(`/product-details/${cart._id}`)}>
                 <img src={cart.imageURL} className='h-20 w-36 rounded-lg' alt='' />
                 <div>
-                  <p className='font-bold text-2xl text-textColor '>{cart.name}</p>
-                  <p className='font-bold text-2xl text-textColor'>  ₦ {cart.productPrice}</p>
+                  <p className='font-bold  text-xl text-textColor '>{cart.name}</p>
+                  <p className='font-bold  text-xl text-textColor'>  ₦ {cart.productPrice}</p>
                 </div>
               </div>
               <div className='flex justify-between text-3xl w-28 items-center gap-2'>
                 <motion.button
                   className='text-4xl text-textColor'
                   whileTap={{ scale: 0.8 }}
-                  onClick={() => updateCartItemQuantity(cart.id, cart.productQty-1)}
+                  onClick={() => updateCartItemQuantity(cart.id, cart.productQty--)}
                 >
                   <AiOutlineMinus />
                 </motion.button>
@@ -152,7 +152,7 @@ const CartCardProduct = ({ data }) => {
                   transition={{ duration: 0.3 }}
                   onClick={() => deleteCartItem(cart.id)}
                 >
-                  <MdDelete className='text-red-500 text-2xl' />
+                  <MdDelete className='text-red-500  text-xl' />
                 </motion.button>
               </div>
             </div>

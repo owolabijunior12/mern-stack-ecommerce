@@ -76,7 +76,7 @@ export const ImageUploader = ({
     <label>
       <div className="flex flex-col items-center justify-center h-full">
         <div className="flex flex-col justify-center items-center cursor-pointer">
-          <p className="font-bold text-textColor text-2xl">
+          <p className="font-bold text-textColor  text-xl">
             <BiCloudUpload />
           </p>
           <p className="text-lg text-textColor">

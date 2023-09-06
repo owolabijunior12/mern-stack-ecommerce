@@ -17,16 +17,16 @@ const Sidebar = () => {
           
           <div className="flex bg-black justify-between px-4 py-4">            
           <Link to={'/'}>
-              <h1 className='py-3 px-2 text-2xl text-textColor'>IBOYTECH STORE</h1>           
+              <h1 className='py-3 px-2  text-xl text-textColor'>IBOYTECH STORE</h1>           
         </Link>
             <button>
-              {/* <AiFillCloseCircle className='text-2xl text-red-500'/> */}
+              {/* <AiFillCloseCircle className=' text-xl text-red-500'/> */}
             </button>
           </div>
           <hr />
 
          
-          <div className="flex flex-col gap-10 m-2 text-2xl scroll-m-1 overflow-scroll overflow-y-scroll bg-scroll text-textColor">
+          <div className="flex flex-col gap-10 m-2  text-xl scroll-m-1 overflow-scroll overflow-y-scroll bg-scroll text-textColor">
             {/* <div className='flex justify-between'>                   
                   <p  className='mx-5 my-2 text-textColor text-4xl'><small><Link to={`/login?redirect=${redirect}`}><FiLogOut values="LogOut" /></Link></small>  </p>
             </div> */}

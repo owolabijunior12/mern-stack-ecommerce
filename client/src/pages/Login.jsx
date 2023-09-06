@@ -87,7 +87,7 @@ const Login = ({useAuth, history,setAuth}) => {
                         </Link >
                           <div className='flex gap-1'>
                                     <Link href="http://" target="_blank" rel="noopener noreferrer" name="newUser">Don't have an account yet</Link>
-                                    <label htmlFor="newUser" className='underline font-bold text-2xl   text-white'><Link to={`/signup?redirect=${redirect}`}>SignUp</Link></label>
+                                    <label htmlFor="newUser" className='underline font-bold  text-xl   text-white'><Link to={`/signup?redirect=${redirect}`}>SignUp</Link></label>
                         </div>    
                   </form>
                   

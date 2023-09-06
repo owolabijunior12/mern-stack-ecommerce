@@ -10,6 +10,9 @@ const Checkout = () => {
   const navigate = useNavigate();
   const [{carts},dispatch] =useStateValue()
   const [check, setCheck] =  useState();
+  const [fullName, setFullName] =  useState();
+  const [address, setAddress] =  useState();
+  const [number, setNumber] =  useState();
   let price =carts.reduce((total, cart) => total + cart.productPrice * cart.productQty, 0).toFixed(2)
   let quality =carts.reduce((total, cart) => total + cart.productQty, 0)
   const config = {
@@ -29,7 +32,12 @@ const Checkout = () => {
   const handlePaystackCloseAction = () => {
     console.log('Payment dialog closed');
   };
-  
+  // const saveOrderAndPay
+  // if(!fullName || !address || !number){
+
+  // }else{
+   
+  // }
   const componentProps = {
     ...config,
     text: 'Payment',
@@ -61,47 +69,48 @@ const Checkout = () => {
           type="text"
           placeholder="Full Name"
           className="w-full my-3  p-3 rounded-md  text-base font-semibold text-textColor outline-none shadow-sm border border-textColor bg-transparent"
-       
+            onChange={e=>setFullName(e.target.value)}
         />      
          <input
           type="text"
           placeholder="Address"
           className="w-full my-3  p-3 rounded-md  text-base font-semibold text-textColor outline-none shadow-sm border border-textColor bg-transparent"
-       
+          onChange={e=>setAddress(e.target.value)}
         />              
         
          <input
           type="number"
           placeholder="Phone number"
           className="w-full my-3  p-3 rounded-md  text-base font-semibold text-textColor outline-none shadow-sm border border-textColor bg-transparent"
-       
+          onChange={e=>setNumber(e.target.value)}
         />            
       </div>
                   </form>
               <div className='border p-4 w-full my-4 rounded-lg border-textColor'>
-                  <h2 className='flex text-2xl font-bold'>Order Summary</h2>
+                  <h2 className='flex  text-xl font-bold'>Order Summary</h2>
                   <div className='flex justify-between px-2 mt-2'> 
                       <h3>TOTAL QUANTITY:</h3>
-                      <h3 className='flex text-2xl font-bold'> x{quality}</h3>
+                      <h3 className='flex  text-xl font-bold'> x{quality}</h3>
                   </div>
                   <div className='flex justify-between px-2 mt-2'> 
                       <h3>SHIPPING FEE:</h3>
-                      <h3 className='flex text-2xl font-bold'> ₦ 0.00</h3>
+                      <h3 className='flex  text-xl font-bold'> ₦ 0.00</h3>
                   </div>
                   <div className='flex justify-between px-2 mt-2'> 
                       <h3>DELIEVEING FEE:</h3>
-                      <h3 className='flex text-2xl font-bold'> ₦ 0.00</h3>
+                      <h3 className='flex  text-xl font-bold'> ₦ 0.00</h3>
                   </div>
                   <div className='flex justify-between px-2 mt-2'> 
                       <h3>TOTAL PRICE:</h3>
-                      <h3 className='flex text-2xl font-bold'> ₦ {price}</h3>
+                      <h3 className='flex  text-xl font-bold'> ₦ {price}</h3>
                   </div>
                   <div className='flex justify-between px-2 mt-2'> 
                       <h3></h3>
                       <motion.button
                           whileTap={{ scale: 0.8 }}
                           transition={{ duration: 0.3 }}
-                          type='button'          
+                          type='button'       
+                          disable   
                           className=' bg-red-500 w-[130px] text-white m-2 p-3 rounded-xl'
                         >
                           <PaystackButton {...componentProps} />   

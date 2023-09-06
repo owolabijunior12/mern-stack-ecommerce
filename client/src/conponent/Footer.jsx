@@ -8,7 +8,7 @@ const Footer = () => {
   const redirect = redirectInUrl ? redirectInUrl : '/';
   return (
     <i className='bg-primary h-auto py-6 px-2  text-textColor flex flex-col justify-center items-center text-sm'>
-        <div className='  text-center text-2xl'>
+        <div className='  text-center  text-xl'>
                
                 <p>Welcome to our Iboytech store that specializes in selling used products! Our platform is designed to provide a convenient and affordable way for customers to buy and sell pre-owned items.</p>
         </div>
@@ -34,10 +34,10 @@ const Footer = () => {
         <div className=' flex flex-col justify-center items-center'>
             <h2>Follow us</h2>
             <div className='flex'>
-                <AiOutlineInstagram className='text-textColor m-1 text-2xl'/>
-                <AiOutlineTwitter className='text-textColor m-1 text-2xl'/>
-                <FaFacebookSquare className='text-textColor m-1 text-2xl'/>
-                <AiFillLinkedin className='text-textColor m-1 text-2xl'/>
+                <AiOutlineInstagram className='text-textColor m-1  text-xl'/>
+                <AiOutlineTwitter className='text-textColor m-1  text-xl'/>
+                <FaFacebookSquare className='text-textColor m-1  text-xl'/>
+                <AiFillLinkedin className='text-textColor m-1  text-xl'/>
             </div>
         </div>
         <i> © 2023 Copyright: <a href="#" target="_blank" rel="noopener noreferrer">Iboytech Store</a></i>

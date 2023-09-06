@@ -110,8 +110,8 @@ const componentProps = {
         
         <div  className='relative flex  min-w-160 p-6   cursor-pointer text-textColor   bg-primary m-4  shadow-md rounded-lg flex-col'>
           <div className='bg-red-500 w-24 rounded-sm text-center text-white   m-1'>Free Delivery</div>
-          <h1 className='flex justify-start text-4xl mr-52 text-textColor font-extrabold mb-4'>{product.name}</h1>
-          <p className='text-2xl mb-2'> ₦{product.product_price}<span className=' text-red-500 text-xs'>save up 20%</span></p>
+          <h1 className='flex justify-start text-xl mr-52 text-textColor font-extrabold mb-4'>{product.name}</h1>
+          <p className=' text-xl mb-2'> ₦{product.product_price}<span className=' text-red-500 text-xs'>save up 20%</span></p>
           <div className='flex text-center' >
             <AiFillStar  className='text-sm'/>
             <AiFillStar  className='text-sm'/>
@@ -198,7 +198,7 @@ const componentProps = {
           <h1 className='pl-4'>Delivery Details</h1>
           <hr />
           <p>
-            <p className='text-2xl font-bold'> Fast Delivery:</p>
+            <p className=' text-xl font-bold'> Fast Delivery:</p>
               <span className='text font-semibold text-lg'>New product </span> will take 4-5 working days to be delievered Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Nobis quibusdam et, quia, eius atque, dolorum voluptas repellendus quod necessitatibus
                 cumque nisi iure provident mollitia rerum impedit magnam maiores. Eveniet, pariatur corrupti,
@@ -232,8 +232,8 @@ const componentProps = {
       )}
     <div className='relative flex  min-w-160   cursor-pointer    bg-primary m-4  shadow-md rounded-lg flex-col'>
           <div className='flex flex-row   px-4 justify-between'>
-              <p className='text-textColor text-2xl font-extrabold '>Saved Items ( 2 )</p>
-              <p className='text-2xl text-white underline font-extrabold'>See All</p>
+              <p className='text-textColor  text-xl font-extrabold '>Saved Items ( 2 )</p>
+              <p className=' text-xl text-white underline font-extrabold'>See All</p>
           </div>
           <div className='flex flex-wrap'>
             
@@ -280,7 +280,7 @@ const componentProps = {
         </div>
         <div className='relative flex  min-w-160   cursor-pointer    bg-primary m-4   rounded-lg flex-col'>
           <div className='flex flex-row   px-1 justify-between'>
-              <p className='text-textColor text-2xl font-extrabold '>Top Sales</p>              
+              <p className='text-textColor  text-xl font-extrabold '>Top Sales</p>              
           </div>
           <div className='flex flex-wrap'>
             
