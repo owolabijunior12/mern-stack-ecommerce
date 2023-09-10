@@ -1,4 +1,4 @@
-# personal-project
+# Mern stack ecommerce project
 # Iboytech Store
 
 Welcome to our Iboytech store that specializes in selling used products! Our platform is designed to provide a convenient and affordable way for customers to buy and sell pre-owned items.
