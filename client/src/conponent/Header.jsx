@@ -23,19 +23,7 @@ const Header = () => {
   const redirect = redirectInUrl ? redirectInUrl : '/';
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
-  // const navbarBackground = isTopOfPage ? "" : "bg-red";
-  // const userInfo= localStorage.getItem("user")
-  // console.log(userInfo);
-  // useEffect(() => {
-  //   if (!carts) {
-  //     getAllCart().then((data) => {
-  //       dispatch({
-  //         type: actionType.SET_CARTS,
-  //         carts: data
-  //       }); 
-  //     });
-  //   }
-  // }, []);
+ 
   
   const cartProducts =   JSON.parse(localStorage.getItem("cart"));
   const user =   JSON.parse(localStorage.getItem("userInfo"))?.user;
